@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<title>photos</title>
+<link rel="stylesheet" href="stylesheets/main.css">
+<script src="js/java.js"></script>
+</head>
+<body>
+  <header>
+  <nav class="row menu">
+    <ul>
+      <li><a class="active" href="index.html"> katsiaryna kryvaltsevich</a></li>
+      <li><a href="index.html" class="item">home</a></li>
+      <li><a href="travel.html" class="item">travel</a></li>
+      <li><a href="photo.html" class="activepage">people</a></li>
+      <li><a href="video.html" class="item">videography</a></li>
+    </ul>
+  </nav>
+  </header>
+  <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="img/ph1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        <p>name1</p>
+      </div>
+      <div class="column">
+        <img src="img/ph2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        <p>name2</p>
+      </div>
+      <div class="column">
+        <img src="img/ph3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        <p>name3</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="img/ph4.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        <p>name4</p>
+      </div>
+      <div class="column">
+        <img src="img/ph2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        <p>name5</p>
+      </div>
+      <div class="column">
+        <img src="img/ph6.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        <p>name6</p>
+      </div>
+    </div>
+  
+  <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/ph1.jpg">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/ph4.jpg" >
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/ph6.jpg">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+  <hr>
+  <section class="contacts">
+    <a href="mailto:katsiaryna.kryvaltsevich@gmail.com">
+          <h3>email me</h3>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100004499684581">
+          <img src="img/fb.png"
+               width="50px"
+               alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/kkatsiarina">
+          <img src="img/ig.png"
+               width="50px"
+               alt="instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/katsiaryna-kryvaltsevich-949382188">
+          <img src="img/li.png"
+               width="50px"
+               alt="linkedin">
+        </a>
+  </section>
+  <footer>
+    <small>&copy; Katsiaryna Kryvaltsevich, 2019</small>
+  </footer>
+</body>
+</html>
